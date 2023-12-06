@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MyPetTodolist</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search notes</string>
+    <string name="titleItemExample">6.12.23</string>
+    <string name="suptitleItemExample">Встать по будильнику</string>
+    <string name="timeItemExample">10:30 AM</string>
+    <string name="logo">PurpleNote</string>
+
+    <string name="detailTitle">Title</string>
+    <string name="detailDateExample">December 6 2:32 PM</string>
+    <string name="startTyping">Start typing</string>
+</resources>
