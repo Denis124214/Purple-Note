@@ -47,21 +47,23 @@
             app:layout_constraintTop_toBottomOf="@id/header"
             android:layout_marginTop="18dp">
 
-            <TextView
+            <EditText
                 android:id="@+id/detailTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/detailTitle"
+                android:hint="@string/detailTitle"
                 android:textSize="27dp"
+                android:background="@android:color/transparent"
                 android:textColor="@color/detailDefaultColor"/>
 
-            <TextView
+            <EditText
                 android:id="@+id/detailDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/detailDateExample"
+                android:hint="@string/detailDateExample"
                 android:textSize="12dp"
                 android:layout_marginTop="19dp"
+                android:background="@android:color/transparent"
                 android:textColor="@color/detailDefaultColor"/>
 
             <LinearLayout
