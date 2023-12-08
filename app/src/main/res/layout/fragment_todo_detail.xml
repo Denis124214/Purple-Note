@@ -52,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="@string/detailTitle"
+                android:paddingRight="340dp"
                 android:textSize="27dp"
                 android:background="@android:color/transparent"
                 android:textColor="@color/detailDefaultColor"/>
@@ -60,6 +61,7 @@
                 android:id="@+id/detailDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingRight="270dp"
                 android:hint="@string/detailDateExample"
                 android:textSize="12dp"
                 android:layout_marginTop="19dp"
@@ -73,8 +75,10 @@
                 android:layout_marginTop="28dp"/>
 
             <EditText
+                android:id="@+id/detailEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:paddingRight="320dp"
                 android:hint="@string/startTyping"
                 android:background="@android:color/transparent"
                 android:textSize="14dp"

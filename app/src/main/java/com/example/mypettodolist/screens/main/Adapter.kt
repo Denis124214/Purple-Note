@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mypettodolist.R
 import com.example.mypettodolist.databinding.NoteItemBinding
-import com.example.mypettodolist.model.NoteEntity
+import com.example.mypettodolist.data.NoteEntity
 
 class Adapter : RecyclerView.Adapter<Adapter.NoteHolder>() { //<PlantAdapter.PlantHolder> - тип вашего ViewHolder. Создаем его ниже
-    val noteList = ArrayList<NoteEntity>() // Этот список будет использоваться для хранения объектов класса Plant.
+    var noteList = emptyList<NoteEntity>() // Этот список будет использоваться для хранения объектов класса Plant.
     class NoteHolder (item: View): RecyclerView.ViewHolder (item) { // class viewHolder. Каждый класс имеет сссылки на свои элементы
         val binding = NoteItemBinding.bind(item) // PlantItemBinding.bind(item) используется для связывания элементов макета с объектами в коде.
         fun bind(note: NoteEntity)  { // можно здесь with(binding написать, чтобы не пришлось ниже binding писать
@@ -32,8 +32,8 @@ class Adapter : RecyclerView.Adapter<Adapter.NoteHolder>() { //<PlantAdapter.Pla
         holder.bind(noteList[position])
     }
 
-    fun addNote (note: NoteEntity) { // при нажатии добавляеться новый элемент
-        noteList.add(note)
+    fun setData (note: List<NoteEntity>) { // при нажатии добавляеться новый элемент
+        this.noteList = note
         notifyDataSetChanged() // перерисовывает
     }
 }

@@ -1,11 +1,11 @@
-package com.example.mypettodolist.model
+package com.example.mypettodolist.data
 
 import android.os.Parcel
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity (tableName = "note_table")
+@Entity
 data class NoteEntity (
     @PrimaryKey(autoGenerate = true)
     val uid: Int,
@@ -17,7 +17,7 @@ data class NoteEntity (
         parcel.readInt()!!,
         parcel.readString()!!,
         parcel.readString()!!,
-        parcel.readString()!!
+        parcel.readString()!!,
     ) {
     }
 
